@@ -1,0 +1,271 @@
+{
+  "debugDome": false,
+  "debugNavigation": false,
+
+  "name": "D328eco",
+  "initialCameraIndex": 1,
+  "interactionGuideVisible": true,
+
+  "guide": {
+    "initialVisible": true,
+    "durationPerSlide": 6,
+    "totalDuration": 12
+  },
+
+  "initialCamera": {
+    "fov": 0.9,
+    "horizontal": 160,
+    "vertical": 80,
+    "radius": 22
+  },
+
+  "morphEffect": {
+    "distance": 8,
+    "duration": 1
+  },
+
+  "fadeEffect": {
+    "duration": 0.8
+  },
+
+  "floorplan": {
+    "path": "floorplan.png",
+    "width": 18,
+    "height": 1.8,
+    "hotspotSize": 0.2
+  },
+
+  "turntable": {
+    "basePath": "./turntable",
+    "fileNamePattern": "EXT_SPIN_v3_{frame}.webp",
+    "verticalOffset": 150,
+    "frameCount": 71,
+    "framePadding": 2,
+    "initialFrame": 3,
+    "zoom": {
+      "default": 0.5,
+      "min": 0.3,
+      "max": 1
+    },
+
+    "hotspots": [
+      {
+        "visibleOnFrames": {
+          "from": 68,
+          "to": 30
+        },
+        "eclipse": {
+          "height": 4,
+          "width": 60,
+          "offset": { "y": -5, "path": 15 }
+        },
+        "video": "./assets/video/enginePropellers.mp4",
+        "headline": "Engine & Propellers",
+        "icon": "./assets/images/engine.svg",
+        "hotspotIcon": "./assets/images/hotspot_engine.svg",
+        "subheadline": "The most efficient and modern engine available today for the regional market",
+        "list": [
+          "Higher propulsive efficiency, better performance and less emission through 100% SAF-PtL compatibility",
+          "40% longer time-on-wing¹",
+          "20% reduction in engine maintenance cost¹"
+        ],
+        "disclaim": "¹vs previous generation engines"
+      },
+      {
+        "visibleOnFrames": {
+          "from": 34,
+          "to": 70
+        },
+        "eclipse": {
+          "height": 4,
+          "width": 20,
+          "offset": { "y": 20, "path": 50 }
+        },
+        "video": "./assets/video/superiorFieldPerformance.mp4",
+        "headline": "Superior field performance",
+        "icon": "./assets/images/fieldPerformance.svg",
+        "hotspotIcon": "./assets/images/hotspot_fieldPerformance.svg",
+        "subheadline": "Outstanding field performance",
+        "list": [
+          "800m STOL capability @ 70% load factor on a 250NM sector",
+          "Fast rate of climb and steep approach capable",
+          "Operate in unpaved runways (with gravel kit) and austere environments including hot & high conditions"
+        ]
+      },
+      {
+        "visibleOnFrames": {
+          "from": 34,
+          "to": 70
+        },
+        "eclipse": {
+          "height": 4,
+          "width": 60,
+          "offset": { "y": -5, "path": 45 }
+        },
+        "video": "./assets/video/outstandingOperationalEconomics.mp4",
+        "headline": "Outstanding operational economics",
+        "icon": "./assets/images/operationalEconomics.svg",
+        "hotspotIcon": "./assets/images/hotspot_operationalEconomics.svg",
+        "subheadline": "Lowest operating costs in its class helping regional airlines achieve higher operational margin",
+        "list": [
+          "Save fuel cost with > 50% savings in block fuel per trip¹",
+          "Reduce operating cost with ~ 50% DMC reduction per hour¹",
+          "Reap higher margin with 55% beak-even load factor²"
+        ],
+        "disclaim": "¹ compared to a similar sized in-service regional jet @ 300 NM trip. ² for a 300 NM trip @ 90 USD ticket fare"
+      },
+      {
+        "visibleOnFrames": {
+          "from": 52,
+          "to": 10
+        },
+        "eclipse": {
+          "height": 5,
+          "width": 70,
+          "offset": { "y": 5, "path": 25 }
+        },
+        "video": "./assets/video/superiorOperationalPerformance.mp4",
+        "headline": "Superior operational Performance",
+        "icon": "./assets/images/superiorOperationalPerformance.svg",
+        "hotspotIcon": "./assets/images/hotspot_superiorOperationalPerformance.svg",
+        "list": [
+          "Fly Further : 655 NM which covers over 98% of all turboprop flights and 95% of all regional jet flight ranges",
+          "Fly Faster : 324KTAS Max. cruise speed",
+          "Fly Higher : 30,000ft Aircraft ceiling",
+          "Less time on the ground: 20 minutes turnaround time"
+        ]
+      },
+      {
+        "visibleOnFrames": {
+          "from": 49,
+          "to": 14
+        },
+        "eclipse": {
+          "height": 5,
+          "width": 90,
+          "offset": { "y": 18, "path": 25 }
+        },
+        "video": "./assets/video/buildForAnyMissions.mp4",
+        "headline": "Built for any missions",
+        "icon": "./assets/images/anyMission.svg",
+        "hotspotIcon": "./assets/images/hotspot_anyMission.svg",
+        "list": [
+          "Proven flexible multi-role platforms including 4h quick conversion capability",
+          "Benchmark platform for aerodynamic and manoeuvrability"
+        ]
+      },
+      {
+        "visibleOnFrames": {
+          "from": 7,
+          "to": 28
+        },
+        "eclipse": {
+          "height": 0.2,
+          "width": 60,
+          "offset": { "y": -2, "path": 75 }
+        },
+        "video": "./assets/video/cargoBay.mp4",
+        "headline": "Cargo Bay",
+        "icon": "./assets/images/cargoBay.svg",
+        "hotspotIcon": "./assets/images/hotspot_cargoBay.svg",
+        "list": [
+          "Generous Cargo bay area : Single Aft Cargo compartment accommodating up to 800 kg of load enabling easy and quick cargo loading & unloading",
+          "Optional large In-Flight Air Operable Door"
+        ]
+      }
+    ]
+  },
+
+  "cameras": [
+    {
+      "name": "Cockpit View",
+      "position": { "x": 8.5, "y": 2, "z": 0 },
+      "paths": ["Pan_v6_000.webp", "Pan_v6_000_night.webp"],
+      "hotspots": [
+        {
+          "position": { "vertical": -15, "horizontal": 210 },
+          "description": "Significantly reduced maintenance cost and improved reliability."
+        },
+        {
+          "position": { "vertical": -20, "horizontal": 185 },
+          "description": "Brand-new flight deck for a regional aircraft in the 21st century, specifically tailored for the D328eco."
+        },
+        {
+          "position": { "vertical": -30, "horizontal": 180 },
+          "description": "Intuitive to use for a superior crew comfort, higher situational awareness and increased efficiency."
+        },
+        {
+          "position": { "vertical": -20, "horizontal": 150 },
+          "description": "Full compliance with all known future CNS/ATM regulations."
+        },
+        {
+          "position": { "vertical": -50, "horizontal": 180 },
+          "description": "Single lever engine control."
+        }
+      ]
+    },
+    {
+      "name": "Entrance View",
+      "position": { "x": 7, "y": 2, "z": 0 },
+      "paths": ["Pan_v5_001.webp", "Pan_v5_001_night.webp"],
+      "hotspots": [
+        {
+          "position": { "vertical": -20, "horizontal": 45 },
+          "description": "Enhanced passenger experience with an ergonomic 40-seat layout and quietest cabin in its class.",
+          "video": "./assets/video/cabin.mp4"
+        },
+        {
+          "position": { "vertical": -15, "horizontal": 205 },
+          "description": "Air bridge FWD passenger door offering Jet-like passenger experience in a quiet environment."
+        },
+        {
+          "position": { "vertical": 15, "horizontal": -25 },
+          "description": "Large Overhead bin compartments, capable of accommodating 3 standard size check-in baggage.",
+          "video": "./assets/video/overheadBins.mp4"
+        }
+      ]
+    },
+    {
+      "name": "Cabin View",
+      "position": { "x": 0, "y": 2, "z": 0 },
+      "paths": ["Pan_v5_002.webp", "Pan_v5_002_night.webp"],
+      "hotspots": [
+        {
+          "position": { "vertical": -15, "horizontal": 15 },
+          "description": "Modern comfort & supreme hygiene.",
+          "detailView": {
+            "horizontal": 120,
+            "vertical": -45,
+            "paths": ["Pan_v5_004.webp", "Pan_v5_004_night.webp"]
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "Galley View",
+      "position": { "x": -3.2, "y": 2, "z": 0 },
+      "paths": ["Pan_v5_003.webp", "Pan_v5_003_night.webp"],
+      "hotspots": [
+        {
+          "position": { "vertical": -0, "horizontal": 60 },
+          "description": "Fully equipped Galley allowing standard airlines trolleys on-board."
+        },
+        {
+          "position": { "vertical": -22, "horizontal": 75 },
+          "description": "Wardrobe"
+        },
+
+        {
+          "position": { "vertical": -18, "horizontal": 120 },
+          "description": "Modern comfort & supreme hygiene.",
+          "detailView": {
+            "horizontal": 120,
+            "vertical": -45,
+            "paths": ["Pan_v5_004.webp", "Pan_v5_004_night.webp"]
+          }
+        }
+      ]
+    }
+  ]
+}
