@@ -14,7 +14,7 @@
       ]
     },
     {
-      "source": "/assets/**",
+      "source": "/assets/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "source": "**/*.webp",
+      "source": "/(.*)\\.webp",
       "headers": [
         {
           "key": "Cache-Control",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "source": "**/*.mp4",
+      "source": "/(.*)\\.mp4",
       "headers": [
         {
           "key": "Cache-Control",
