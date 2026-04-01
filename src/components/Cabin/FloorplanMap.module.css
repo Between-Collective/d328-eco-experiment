@@ -1,0 +1,95 @@
+.map {
+  position: absolute;
+  bottom: var(--space-2xl);
+  right: var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-sm);
+  z-index: var(--z-toolbar);
+}
+
+.imageWrap {
+  position: relative;
+  width: 160px;
+  background: rgba(18, 18, 30, 0.75);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+  filter: brightness(2) saturate(0);
+  object-fit: contain;
+}
+
+.dot {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1.5px solid rgba(255,255,255,0.3);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.dot:hover {
+  background: rgba(255,255,255,0.8);
+  transform: translate(-50%, -50%) scale(1.3);
+}
+
+.dot.activeDot {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  transform: translate(-50%, -50%) scale(1.3);
+}
+
+.dot:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.exteriorBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background var(--transition-base), transform var(--transition-fast);
+}
+
+.exteriorBtn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.exteriorBtn:hover {
+  background: var(--color-primary-hover);
+  transform: scale(1.05);
+}
+
+.exteriorBtn:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  .map {
+    bottom: 80px;
+    right: var(--space-md);
+  }
+  .imageWrap {
+    width: 120px;
+  }
+}

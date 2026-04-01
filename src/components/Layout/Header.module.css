@@ -1,0 +1,68 @@
+.header {
+  position: absolute;
+  top: var(--space-md);
+  left: var(--space-md);
+  z-index: var(--z-toolbar);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.mobileBranding {
+  display: flex;
+  align-items: center;
+}
+
+.mobileLogo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.toggle {
+  display: flex;
+  background: rgba(200, 195, 188, 0.85);
+  border-radius: var(--radius-full);
+  padding: 3px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  gap: 2px;
+}
+
+[data-night="true"] .toggle {
+  background: rgba(30, 30, 48, 0.85);
+}
+
+.btn {
+  padding: 7px 20px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(26, 26, 26, 0.6);
+  background: transparent;
+  transition: all var(--transition-base);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+[data-night="true"] .btn {
+  color: rgba(240, 237, 233, 0.6);
+}
+
+.btn.active {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* On tablet+ hide mobile logo since sidebar shows branding */
+@media (min-width: 768px) {
+  .mobileBranding {
+    display: none;
+  }
+}

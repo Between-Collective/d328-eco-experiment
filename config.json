@@ -110,7 +110,7 @@
         "list": [
           "Save fuel cost with > 50% savings in block fuel per trip¹",
           "Reduce operating cost with ~ 50% DMC reduction per hour¹",
-          "Reap higher margin with 55% beak-even load factor²"
+          "Reap higher margin with 55% break-even load factor²"
         ],
         "disclaim": "¹ compared to a similar sized in-service regional jet @ 300 NM trip. ² for a 300 NM trip @ 90 USD ticket fare"
       },
@@ -125,7 +125,7 @@
           "offset": { "y": 5, "path": 25 }
         },
         "video": "./assets/video/superiorOperationalPerformance.mp4",
-        "headline": "Superior operational Performance",
+        "headline": "Superior Operational Performance",
         "icon": "./assets/images/superiorOperationalPerformance.svg",
         "hotspotIcon": "./assets/images/hotspot_superiorOperationalPerformance.svg",
         "list": [

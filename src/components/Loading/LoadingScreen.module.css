@@ -1,0 +1,106 @@
+.screen {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-loading);
+  background: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  background-image: url('/turntable/EXT_SPIN_v3_03.webp');
+  background-size: 60%;
+  background-position: center 55%;
+  background-repeat: no-repeat;
+  filter: blur(2px);
+  opacity: 0.35;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-xl);
+  padding: var(--space-2xl);
+  max-width: 480px;
+  width: 100%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.logo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.company {
+  font-family: var(--font-caps);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: var(--color-text);
+  opacity: 0.7;
+}
+
+.model {
+  font-family: var(--font-caps);
+  font-size: 28px;
+  color: var(--color-accent);
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.tagline {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tagline p {
+  font-family: var(--font-caps);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text);
+  opacity: 0.75;
+  line-height: 1.3;
+}
+
+.progressWrap {
+  width: 100%;
+  height: 2px;
+  background: rgba(26, 26, 26, 0.12);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background: var(--color-primary);
+  border-radius: var(--radius-full);
+  transition: width 0.3s ease;
+  min-width: 2px;
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: var(--space-xl);
+  }
+  .tagline p {
+    font-size: 18px;
+  }
+}

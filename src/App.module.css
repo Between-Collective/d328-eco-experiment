@@ -1,0 +1,8 @@
+.app {
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+  position: relative;
+  background: var(--color-bg);
+  transition: background var(--transition-slow);
+}

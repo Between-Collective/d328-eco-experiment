@@ -1,0 +1,48 @@
+.branding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.company {
+  font-family: var(--font-caps);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: var(--color-text);
+  line-height: 1.4;
+  transition: color var(--transition-slow);
+}
+
+.bottom {
+  display: flex;
+  align-items: flex-end;
+}
+
+.model {
+  font-family: var(--font-caps);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--color-accent);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  letter-spacing: 0.05em;
+  line-height: 1;
+}

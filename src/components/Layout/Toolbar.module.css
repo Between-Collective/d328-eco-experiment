@@ -1,0 +1,31 @@
+.toolbar {
+  position: absolute;
+  right: var(--space-md);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: var(--z-toolbar);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  /* Allow the row group to extend slightly beyond */
+  overflow: visible;
+}
+
+.rotateGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+}
+
+.rotateCenter {
+  /* active state is handled by IconButton */
+}
+
+@media (max-width: 480px) {
+  .toolbar {
+    right: var(--space-sm);
+    gap: 6px;
+  }
+}

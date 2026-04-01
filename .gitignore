@@ -41,5 +41,11 @@ pids
 .env.test.local
 .env.production.local
 
+# Build output
+dist/
+
+# Dependencies
+node_modules/
+
 # Vercel
-.vercel 
+.vercel
